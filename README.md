@@ -20,3 +20,4 @@ Use cases
 * Synthetic Data Generation
 * Assisted Decoding
 * Data analyst agent
+* Building a Gradio demo 
