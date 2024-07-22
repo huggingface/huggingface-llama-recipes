@@ -1,3 +1,5 @@
+####### You need CUDA and torch >= 2.3
+
 import os
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
