@@ -1,5 +1,7 @@
-# If you are are not necessarily poor, want to re-use a prompt for all your generation, you are in the right place
-# this needs https://github.com/huggingface/transformers/pull/32159 to be merged
+# This example showcases re-using a prompt for all your generation.
+
+# For this to work correctly, please install transformers from source with the following command:
+# pip install git+https://github.com/huggingface/transformers
 import os, torch, copy
 from transformers import AutoModelForCausalLM, AutoTokenizer, DynamicCache
 device = "cuda"
