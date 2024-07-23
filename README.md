@@ -1,6 +1,6 @@
 # Hugging Face Llama Recipes
 
-🤗🦙Welcome! This repository contains minimal recipes to get started with Llama 3.1 quickly. 
+🤗🦙Welcome! This repository contains minimal recipes to get started with Llama 3.1 quickly.
 
 * To get an overview of Llama 3.1, please visit [Hugging Face announcement blog post](https://huggingface.co/blog/llama31).
 * For more advanced end-to-end use cases with open ML, please visit the [Open Source AI Cookbook](https://huggingface.co/learn/cookbook/index).
@@ -65,8 +65,8 @@ Here are some notebooks to help you started:
 * [Run Llama 8B in 4-bits with bitsandbytes](./4bit_bnb.ipynb)
 * [Run Llama with AWQ](./awq.ipynb)
 * [Run Llama 3.1 405B FP8](./fp8-405B.ipynb)
-* [Run Llama 3.1 405B quantized to INT4 with AWQ](./llama_405b_awq_generation.py)
-* [Run Llama 3.1 405B quantized to INT4 with GPTQ](./llama_405b_gptq_generation.py)
+* [Run Llama 3.1 405B quantized to INT4 with AWQ](./awq_generation.py)
+* [Run Llama 3.1 405B quantized to INT4 with GPTQ](./gptq_generation.py)
 * [Run assisted decoding with Llama 405B and Llama 8B](./assisted_decoding.py)
 * [Accelerate your inference using torch.compile](./torch_compile.py)
 * Execute some Llama-generated Python code
