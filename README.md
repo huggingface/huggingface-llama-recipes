@@ -70,7 +70,7 @@ Here are some notebooks to help you started:
 
 Are these models too large for you to run at home? Would you like to experiment with Llama 405B? Try out the following examples!
 
-* Use the Inference API for PRO users
+* [Use the Inference API for PRO users](./inference-api.ipynb)
 * Use a dedicated Inference Endpoint
 
 ## Llama Guard and Prompt Guard
