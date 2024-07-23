@@ -1,15 +1,15 @@
 # Hugging Face Llama Recipes
 
-🤗🦙Welcome! This repository contains minimal recipes to quickly get started with Llama 3.1. 
+🤗🦙Welcome! This repository contains minimal recipes to get started with Llama 3.1 quickly. 
 
 * To get an overview of Llama 3.1, please visit [Hugging Face announcement blog post](https://huggingface.co/blog/llama31).
 * For more advanced end-to-end use cases with open ML, please visit the [Open Source AI Cookbook](https://huggingface.co/learn/cookbook/index).
 
-This repository is WIP, so you might see considerable changes in the coming days.
+This repository is WIP so that you might see considerable changes in the coming days.
 
 ## Local Inference
 
-Do you want to run inference of the Llama 3.1 models locally? So do we! The memory requirements depend on the model size and the precision of the weights. Here's a table showing the approximate memory needed for different configurations:
+Would you like to run inference of the Llama 3.1 models locally? So do we! The memory requirements depend on the model size and the precision of the weights. Here's a table showing the approximate memory needed for different configurations:
 
 <table>
   <tr>
@@ -19,7 +19,7 @@ Do you want to run inference of the Llama 3.1 models locally? So do we! The memo
    </td>
    <td><strong>FP8</strong>
    </td>
-   <td><strong>INT4 (AWQ/GPTQ)</strong>
+   <td><strong>INT4 (AWQ/GPTQ/bnb)</strong>
    </td>
   </tr>
   <tr>
@@ -59,14 +59,14 @@ _Note: These are estimated values and may vary based on specific implementation 
 Here are some notebooks to help you started:
 
 * Run Llama 8B in free Google Colab in half precision
-* Run Llama 8B in 8-bit and 4-bits!
+* Run Llama 8B in 8-bit and 4-bit!
 * Run Llama with AWQ
 * Execute some Llama-generated Python code
 * Use tools with Llama!
 
 ## API inference
 
-Are these models too large for you to run at home? Do you want to experiment with Llama 405B? Try out the following examples!
+Are these models too large for you to run at home? Would you like to experiment with Llama 405B? Try out the following examples!
 
 * Use the Inference API for PRO users
 * Use a dedicated Inference Endpoint
