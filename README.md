@@ -59,8 +59,8 @@ _Note: These are estimated values and may vary based on specific implementation 
 Here are some notebooks to help you started:
 
 * Run Llama 8B in free Google Colab in half precision
-* [Run Llama 8B in 8-bits with bitsandbytes](llama_8_bit_bnb.py)
-* [Run Llama 8B in 4-bits with bitsandbytes](llama_4_bit_bnb.py)
+* [Run Llama 8B in 8-bits with bitsandbytes](8_bit_bnb.py)
+* [Run Llama 8B in 4-bits with bitsandbytes](4_bit_bnb.py)
 * [Run Llama with AWQ](./awq.ipynb)
 * [Run assisted decoding with Llama 405B and Llama 8B](./assisted_decoding.py)
 * [Accelerate your inference using torch.compile](./torch_compile.py)
