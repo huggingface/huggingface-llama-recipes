@@ -59,8 +59,9 @@ _Note: These are estimated values and may vary based on specific implementation 
 Here are some notebooks to help you started:
 
 * Run Llama 8B in free Google Colab in half precision
-* Run Llama 8B in 8-bit and 4-bits!
-* Run Llama with AWQ
+* [Run Llama 8B in 8-bits with bitsandbytes](llama_8_bit_bnb.py)
+* [Run Llama 8B in 4-bits with bitsandbytes](llama_4_bit_bnb.py)
+* [Run Llama 8B in 4-bits with AWQ](llama_4_bit_awq.py)
 * Execute some Llama-generated Python code
 * Use tools with Llama!
 
