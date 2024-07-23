@@ -89,6 +89,6 @@ In addition to the generative models, Meta released two new models: Llama Guard 
 ## Advanced use cases
 
 * [How to fine-tune Llama 3.1 8B on consumer GPU with PEFT and QLoRA with bitsandbytes](./peft_finetuning.py)
-* Generate synthetic data with `distilabel`
+* [Generate synthetic data with `distilabel`](./synthetic-data-with-llama.ipynb)
 * Do assisted decoding with a large and a small model
 * Build a ML demo using Gradio
