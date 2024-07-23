@@ -1,8 +1,10 @@
 # INSTALLATION
-# pip install "torch>=2.2.0,<2.3.0" "transformers[accelerate]" optimum --upgrade
-# pip install auto_gptq --no-build-isolation
+# pip install -q --upgrade transformers accelerate optimum
+# pip install -q --no-build-isolation auto-gptq
 # REQUIREMENTS
 # An instance with at least ~210 GiB of total GPU memory
+# An instance with at least ~210 GiB of total GPU memory when using the 405B model.
+# The INT4 versions of the 70B and 8B models require ~35 GiB and ~4 GiB, respectively.
 
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
