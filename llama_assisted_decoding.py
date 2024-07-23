@@ -14,8 +14,8 @@ ATOL = 1e-6  # ~1e-6 for fp32, up to ~1e-3 for 16 bit vars [these are NORMALIZED
 TORCH_DTYPE = torch.float32
 
 PROMPT = "Alice and Bob "
-CHECKPOINT = "Meta-Llama/Llama-3-405B"  # <--- big llama here
-ASSISTED_CHECKPOINT = "Meta-Llama/Llama-3-7B-v1.1"  # <--- small llama here
+CHECKPOINT = "meta-llama/Meta-Llama-3-405B"  # <--- big llama here
+ASSISTED_CHECKPOINT = "meta-llama/Meta-Llama-3.1-8B"  # <--- small llama here
 
 
 model = AutoModelForCausalLM.from_pretrained(CHECKPOINT, device_map="auto", torch_dtype=TORCH_DTYPE)
