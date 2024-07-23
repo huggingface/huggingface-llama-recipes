@@ -1,5 +1,9 @@
-# If you are poor, you are in the right place. Let's run long sequences but only quantize the cache for starters.
+# If you are GPU poor, you are in the right place. This example showcases quantizing the KV cache
+# in order to have lower memory requirements even with larger sequences.
+# 
+# Quanto is required to run this example, you can do so with:
 # pip install quanto
+
 import os
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
