@@ -1,4 +1,9 @@
+# This example is a very quick showcase of partial fine-tuning the Llama 3.1 8B model
+# on the IMDB dataset using QLoRA with bitsandbytes.
+
+# In order to run this example, you'll need to install peft, trl, and bitsandbytes:
 # pip install peft trl bitsandbytes
+
 import torch
 from datasets import load_dataset
 
