@@ -7,6 +7,8 @@
 
 This repository is WIP so that you might see considerable changes in the coming days.
 
+_Note: To use Llama 3.1, you need to accept the license and request permission to access the models. Please, visit [any of the Hugging Face repos](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct) and submit your request. You only need to do this once, you'll get access to all the repos if your request is approved._
+
 ## Local Inference
 
 Would you like to run inference of the Llama 3.1 models locally? So do we! The memory requirements depend on the model size and the precision of the weights. Here's a table showing the approximate memory needed for different configurations:
