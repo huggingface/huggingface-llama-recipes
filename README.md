@@ -60,7 +60,9 @@ Here are some notebooks to help you started:
 
 * Run Llama 8B in free Google Colab in half precision
 * Run Llama 8B in 8-bit and 4-bit!
-* Run Llama with AWQ
+* [Run Llama with AWQ](./awq.ipynb)
+* [Run assisted decoding with Llama 405B and Llama 8B](./assisted_decoding.py)
+* [Accelerate your inference using torch.compile](./torch_compile.py)
 * Execute some Llama-generated Python code
 * Use tools with Llama!
 
@@ -80,7 +82,7 @@ In addition to the generative models, Meta released two new models: Llama Guard 
 
 ## Advanced use cases
 
-* How to fine-tune Llama 3.1 8B on consumer GPU with `trl` and QLoRA
+* [How to fine-tune Llama 3.1 8B on consumer GPU with PEFT and QLoRA with bitsandbytes](./peft_finetuning.py)
 * Generate synthetic data with `distilabel`
 * Do assisted decoding with a large and a small model
 * Build a ML demo using Gradio
