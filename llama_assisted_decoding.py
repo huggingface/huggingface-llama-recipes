@@ -1,8 +1,18 @@
-# You need enough memory for both models.
+# This example showcases using two Llama 3.1 checkpoints, one big, the 405B, and one small, the 8B, in order
+# to do assisted generation.
+# 
+# In brief terms, assisted generation makes use of a smaller model to generate sensible outputs, which are then 
+# validated or invalidated by the larger model.
+#
+# We recommend this blogpost to dive into assisted generation: https://huggingface.co/blog/assisted-generation
+#
+# In order to run this example, you will need enough memory for both models.
+#
 # The result **should** match the original model's generation.
 # CAVEAT 1: sampling ruins this property, even with seeding (because the assistant model consumes the rng state as well).
 # CAVEAT 2: due to the nature of fp ops, there are tiny fluctuations in the logits, which may lead to different text results. There 2 properties should be true, nonetheless: a) the quality of the generated text is the same, and b) the logits on the first mismatched token are very close to each other.
 # See https://github.com/huggingface/transformers/issues/25420#issuecomment-1775317535
+
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import time
 import torch
