@@ -78,9 +78,9 @@ In addition to the generative models, Meta released two new models: Llama Guard 
 * Detecting jailbreaking with Prompt Guard
 * Using Llama Guard for Guardrailing
 
-## Advanced used cases
+## Advanced use cases
 
 * How to fine-tune Llama 3.1 8B on consumer GPU with `trl` and QLoRA
 * Generate synthetic data with `distilabel`
-* Do asisted decoding with a large and a small model
+* Do assisted decoding with a large and a small model
 * Build a ML demo using Gradio
