@@ -1,3 +1,4 @@
+# If you are poor, you are in the right place. Let's run long sequences but only quantize the cache for starters.
 # pip install quanto
 import os
 import torch
