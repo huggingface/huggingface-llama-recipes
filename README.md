@@ -7,6 +7,8 @@
 
 This repository is WIP so that you might see considerable changes in the coming days.
 
+_Note: To use Llama 3.1, you need to accept the license and request permission to access the models. Please, visit [any of the Hugging Face repos](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct) and submit your request. You only need to do this once, you'll get access to all the repos if your request is approved._
+
 ## Local Inference
 
 Would you like to run inference of the Llama 3.1 models locally? So do we! The memory requirements depend on the model size and the precision of the weights. Here's a table showing the approximate memory needed for different configurations:
@@ -61,7 +63,9 @@ Here are some notebooks to help you started:
 * Run Llama 8B in free Google Colab in half precision
 * Run Llama 8B in 8-bit and 4-bit!
 * [Run Llama with AWQ](./awq.ipynb)
-* [Run Llama 405B FP8](./fp8-405B.ipynb)
+* [Run Llama 3.1 405B FP8](./fp8-405B.ipynb)
+* [Run Llama 3.1 405B quantized to INT4 with AWQ](./llama_405b_awq_generation.py)
+* [Run Llama 3.1 405B quantized to INT4 with GPTQ](./llama_405b_gptq_generation.py)
 * [Run assisted decoding with Llama 405B and Llama 8B](./assisted_decoding.py)
 * [Accelerate your inference using torch.compile](./torch_compile.py)
 * Execute some Llama-generated Python code
