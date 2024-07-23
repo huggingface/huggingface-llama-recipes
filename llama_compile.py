@@ -1,4 +1,7 @@
-####### You need CUDA and torch >= 2.3
+# This example showcases how to leverage the 3.1 8B Instruct models using 
+# torch.compile to accelerate inference.
+#
+# You need CUDA and torch >= 2.3 in order to run this example.
 
 import os
 import torch
