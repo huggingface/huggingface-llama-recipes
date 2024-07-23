@@ -64,6 +64,7 @@ Here are some notebooks to help you started:
 * [Run Llama 8B in 8-bits with bitsandbytes](./8bit_bnb.ipynb)
 * [Run Llama 8B in 4-bits with bitsandbytes](./4bit_bnb.ipynb)
 * [Run Llama with AWQ](./awq.ipynb)
+* [Run Llama 3.1 405B FP8](./fp8-405B.ipynb)
 * [Run Llama 3.1 405B quantized to INT4 with AWQ](./llama_405b_awq_generation.py)
 * [Run Llama 3.1 405B quantized to INT4 with GPTQ](./llama_405b_gptq_generation.py)
 * [Run assisted decoding with Llama 405B and Llama 8B](./assisted_decoding.py)
