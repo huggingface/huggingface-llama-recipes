@@ -3,7 +3,7 @@
 Local inference
 * How to run Llama 8B in free Google Colab in half precision
 * How to run Llama in 8-bit
-* How to run Llama with AWQ
+* How to run Llama 3.1 405B quantized to INT4 with AWQ and GPTQ
 * Doing some Python execution
 * Custom tool usage
 
