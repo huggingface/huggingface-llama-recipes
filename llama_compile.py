@@ -6,7 +6,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 os.environ["TOKENIZERS_PARALLELISM"] = "false" # silence warnings when compiling
 
 device = "cuda"
-ckpt = "Meta-Llama/Llama-3.1-8B-Instruct"
+ckpt = "meta-llama/Meta-Llama-3.1-8B-Instruct"
 
 model = AutoModelForCausalLM.from_pretrained(ckpt, torch_dtype=torch.float16)
 model.to(device)
