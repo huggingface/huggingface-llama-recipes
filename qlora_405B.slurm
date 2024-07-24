@@ -1,8 +1,9 @@
-# make sure to have the lastest version of transformers bitsandbytes accelerate peft
+# make sure to have the lastest version of transformers bitsandbytes accelerate peft flash-attention
+# use this fork for trl https://github.com/huggingface/trl/pull/1863
 
 # training setup
 NUM_NODES=1
-GPUS_PER_NODE=8 # you can go down to 4 gpu
+GPUS_PER_NODE=8
 WORLD_SIZE=$(($NUM_NODES*$GPUS_PER_NODE))
 
 # so processes know who to talk to
@@ -27,7 +28,8 @@ export CMD=" \
     --num_train_epochs=3 \
     --max_steps=-1 \
     --gradient_checkpointing \
-    --attn_implementation="eager" \
+    --optim adamw_hf \
+    --attn_implementation="flash_attention_2" \
     --torch_dtype="bfloat16" \
     --bnb_4bit_quant_type="nf4" \
     --use_peft true \
