@@ -63,7 +63,7 @@ Here are some notebooks to help you started:
 * Run Llama 8B in free Google Colab in half precision
 * [Run Llama 8B in 8-bits with bitsandbytes](./8bit_bnb.ipynb)
 * [Run Llama 8B in 4-bits with bitsandbytes](./4bit_bnb.ipynb)
-* [Run Llama with AWQ](./awq.ipynb)
+* [Run Llama 8B with AWQ & fused ops](./awq.ipynb)
 * [Run Llama 3.1 405B FP8](./fp8-405B.ipynb)
 * [Run Llama 3.1 405B quantized to INT4 with AWQ](./awq_generation.py)
 * [Run Llama 3.1 405B quantized to INT4 with GPTQ](./gptq_generation.py)
