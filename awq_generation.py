@@ -5,13 +5,14 @@
 # The INT4 versions of the 70B and 8B models require ~35 GiB and ~4 GiB, respectively.
 
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer, AwqConfig
 
 model_id = "hugging-quants/Meta-Llama-3.1-405B-Instruct-AWQ-INT4"
-messages = [
-    {"role": "system", "content": "You are a pirate"},
-    {"role": "user", "content": "What's Deep Leaning?"},
-]
+quantization_config = AwqConfig(
+    bits=4,
+    fuse_max_seq_len=512, # Note: Update this as per your use-case
+    do_fuse=True,
+)
 
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 model = AutoModelForCausalLM.from_pretrained(
@@ -19,7 +20,13 @@ model = AutoModelForCausalLM.from_pretrained(
     torch_dtype=torch.float16,
     low_cpu_mem_usage=True,
     device_map="auto",
+    quantization_config=quantization_config
 )
+
+messages = [
+    {"role": "system", "content": "You are a pirate"},
+    {"role": "user", "content": "What's Deep Leaning?"},
+]
 
 inputs = tokenizer.apply_chat_template(
     messages,
