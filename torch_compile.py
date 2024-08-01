@@ -17,7 +17,7 @@ model.to(device)
 tokenizer = AutoTokenizer.from_pretrained(ckpt)
 
 prompt = "Why dogs are so cute?"
-inputs = tokenizer(prompt, return_tensors="pt").to("cuda")
+inputs = tokenizer(prompt, return_tensors="pt").to(device)
 
 # Specify the max length (including both the prompt and the response)
 # When calling `generate` with `cache_implementation="static" later, this is also used to create a `StaticCache` object
