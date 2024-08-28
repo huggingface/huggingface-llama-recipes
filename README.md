@@ -69,6 +69,7 @@ Here are some notebooks to help you started:
 * [Run Llama 3.1 405B quantized to INT4 with GPTQ](./gptq_generation.py)
 * [Run assisted decoding with Llama 405B and Llama 8B](./assisted_decoding.py)
 * [Accelerate your inference using torch.compile](./torch_compile.py)
+* [Accelerate your inference using torch.compile and 4-bit quantization with torchao](./torch_compile_with_torchao.py)
 * Execute some Llama-generated Python code
 * Use tools with Llama!
 
