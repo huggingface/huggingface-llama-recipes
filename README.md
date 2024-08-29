@@ -71,7 +71,7 @@ Here are some notebooks to help you started:
 * [Accelerate your inference using torch.compile](./torch_compile.py)
 * [Accelerate your inference using torch.compile and 4-bit quantization with torchao](./torch_compile_with_torchao.ipynb)
 * Execute some Llama-generated Python code
-* Use tools with Llama!
+* [Use tools with Llama!](./tools.ipynb)
 
 ## API inference
 
