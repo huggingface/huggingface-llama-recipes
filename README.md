@@ -97,7 +97,7 @@ print(f"Generation: {generation[0]['generated_text']}")
 
 ## Local Inference
 
-Would you like to run inference of the Llama 3.1 models locally?
+Would you like to run inference of the Llama models locally?
 So do we! The memory requirements depend on the model size and the
 precision of the weights. Here's a table showing the approximate
 memory needed for different configurations:
