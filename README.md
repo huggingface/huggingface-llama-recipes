@@ -164,9 +164,10 @@ Working on the 🐘 big Llama 3.1 405B model:
 
 ## Model Fine Tuning:
 
-It is often not enough to run inference on the model, you would also
-need to fine tune the model on some custom dataset. We have got you
-covered.
+It is often not enough to run inference on the model. 
+Many times, you need to fine-tune the model on some 
+custom dataset. Here are some scripts showing 
+how to fine-tune the models.
 
 Fine tune models on your custom dataset:
 * [Fine tune Llama 3.2 Vision on a custom dataset](./Llama-Vision%20FT.ipynb)
