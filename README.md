@@ -26,38 +26,7 @@ The easiest way to quickly run a Llama 🦙 on your machine would be with the
 $ pip install -U transformers
 ```
 
-### Generate text with a base model
-
-Let's generate some text from a given prompt.
-
-```python
-import torch
-from transformers import pipeline
-
-device = "cuda" if torch.cuda.is_available() else "cpu"
-
-llama_31 = "meta-llama/Llama-3.1-8B" # <-- llama 3.1
-llama_32 = "meta-llama/Llama-3.2-3B" # <-- llama 3.2
-
-generator = pipeline(model=llama_32, device=device, torch_dtype=torch.bfloat16)
-generation =generator(
-    "Alice and Bob", # <-- enter prompt here
-    do_sample=False,
-    temperature=1.0,
-    top_p=1,
-    max_new_tokens=20
-)
-
-print(f"Generation: {generation[0]['generated_text']}")
-# Generation: Alice and Bob are playing a game.
-# Alice has a deck of cards, each of which has a number written on
-```
-
-### Generate text with a instruction tuned model
-
-Generating some text given a prompt is cool, but what is even better
-is conversating with an instruction tuned model. Let's see how to set
-that up!
+Let us conversate with an instruction tuned model.
 
 ```python
 import torch
