@@ -112,9 +112,6 @@ memory needed for different configurations:
 | 70B | 3.1 | 140 GB | 70GB | 35GB |
 |405B | 3.1 |810 GB | 405GB | 204GB |
 
-| Model Size | BF16/FP16 | FP8 | INT4 |
-| :--: | :--: | :--: | :--: |
-
 
 > [!NOTE]
 > These are estimated values and may vary based on specific
