@@ -141,6 +141,7 @@ how to fine-tune the models.
 
 Fine tune models on your custom dataset:
 * [Fine tune Llama 3.2 Vision on a custom dataset](./Llama-Vision%20FT.ipynb)
+* [Supervised Fine Tuning on Llama 3.2 Vision with TRL](./sft_vlm.py)
 * [How to fine-tune Llama 3.1 8B on consumer GPU with PEFT and QLoRA with bitsandbytes](./peft_finetuning.py)
 * [Execute a distributed fine tuning job for the Llama 3.1 405B model on a SLURM-managed computing cluster](./qlora_405B.slurm)
 
@@ -151,6 +152,7 @@ of bigger models? These notebooks showcase assisted decoding (speculative decodi
 
 * [Run assisted decoding with 🐘 Llama 3.1 70B and 🤏 Llama 3.2 3B](./assisted_decoding_70B_3B.ipynb)
 * [Run assisted decoding with Llama 3.1 8B and Llama 3.2 1B](./assisted_decoding_8B_1B.ipynb)
+* [Assisted Decoding with 405B model](./assisted_decoding.py)
 
 ## Performance Optimization
 
