@@ -114,7 +114,7 @@ Fine tune models on your custom dataset:
 ## Assisted Decoding Techniques
 
 Do you want to use the smaller Llama 3.2 models to speedup text generation
-of bigger models? These notebooks showcase assisted decoding (speculative decoding), which gives you ~2x speedups for text generation on Llama 3.1 70B (with greedy decoding).
+of bigger models? These notebooks showcase assisted decoding (speculative decoding), which gives you upto 2x speedups for text generation on Llama 3.1 70B (with greedy decoding).
 
 * [Run assisted decoding with 🐘 Llama 3.1 70B and 🤏 Llama 3.2 3B](./assisted_decoding_70B_3B.ipynb)
 * [Run assisted decoding with Llama 3.1 8B and Llama 3.2 1B](./assisted_decoding_8B_1B.ipynb)
