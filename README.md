@@ -32,38 +32,25 @@ Let's generate some text from a given prompt.
 
 ```python
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import pipeline
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
-checkpoint_31 = "meta-llama/Llama-3.1-8B" # <-- llama3.1
-checkpoint_32 = "meta-llama/Llama-3.2-3B" # <-- llama3.2
 
-llama = AutoModelForCausalLM.from_pretrained(
-    checkpoint_32,
-    torch_dtype=torch.bfloat16
-).to(device)
-tokenizer = AutoTokenizer.from_pretrained(checkpoint_32)
+llama_31 = "meta-llama/Llama-3.1-8B" # <-- llama 3.1
+llama_32 = "meta-llama/Llama-3.2-3B" # <-- llama 3.2
 
-prompt = "Alice and Bob"
-model_inputs = tokenizer(prompt, return_tensors="pt").to(device)
-
-with torch.no_grad():
-    generation_outputs = llama.generate(
-        **model_inputs,
-        do_sample=False, # Greedy Decoding
-        max_new_tokens=50,
-    )
-
-generated_text = tokenizer.batch_decode(
-    generation_outputs,
-    skip_special_tokens=True
+generator = pipeline(model=llama_32, device=device, torch_dtype=torch.bfloat16)
+generation =generator(
+    "Alice and Bob", # <-- enter prompt here
+    do_sample=False,
+    temperature=1.0,
+    top_p=1,
+    max_new_tokens=20
 )
-print(f"Prompt: {prompt}\nGeneration: {generated_text[0]}")
-# Prompt: Alice and Bob
-# Generation: Alice and Bob are playing a game. Alice has a deck of
-# cards, each of which has a number written on it. Bob has a deck of
-# cards, each of which has a number written on it. The numbers on the
-# cards are distinct. Alice and Bob
+
+print(f"Generation: {generation[0]['generated_text']}")
+# Generation: Alice and Bob are playing a game.
+# Alice has a deck of cards, each of which has a number written on
 ```
 
 ### Generate text with a instruction tuned model
@@ -74,55 +61,38 @@ that up!
 
 ```python
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import pipeline
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
-checkpoint_31 = "meta-llama/Llama-3.1-8B-Instruct" # <-- llama3.1
-checkpoint_32 = "meta-llama/Llama-3.2-3B-Instruct" # <-- llama3.2
 
-llama = AutoModelForCausalLM.from_pretrained(
-    checkpoint_32,
-    torch_dtype=torch.bfloat16
-).to(device)
-tokenizer = AutoTokenizer.from_pretrained(checkpoint_32)
+llama_31 = "meta-llama/Llama-3.1-8B-Instruct" # <-- llama 3.1
+llama_32 = "meta-llama/Llama-3.2-3B-Instruct" # <-- llama 3.2
 
 prompt = [
     {"role": "system", "content": "You are a helpful assistant, that responds as a pirate."},
     {"role": "user", "content": "What's Deep Learning?"},
 ]
-model_inputs = tokenizer.apply_chat_template(
+
+generator = pipeline(model=llama_32, device=device, torch_dtype=torch.bfloat16)
+generation = generator(
     prompt,
-    tokenize=True,
-    add_generation_prompt=True,
-    return_tensors="pt",
-).to(device)
-
-with torch.no_grad():
-    generation_outputs = llama.generate(
-        model_inputs,
-        do_sample=False, # Greedy Decoding
-        max_new_tokens=50,
-    )
-
-generated_text = tokenizer.batch_decode(
-    generation_outputs,
-    skip_special_tokens=True
+    do_sample=False,
+    temperature=1.0,
+    top_p=1,
+    max_new_tokens=50
 )
-print(f"Generation: {generated_text[0]}")
 
-# Generation: system
-#
-# Cutting Knowledge Date: December 2023
-# Today Date: 26 Jul 2024
-#
-# You are a helpful assistant, that responds as a pirate.user
-#
-# What's Deep Learning?assistant
-#
-# Yer lookin' fer a treasure trove o' knowledge on Deep Learnin', eh?
-# Alright then, listen close and I'll tell ye about it.
-#
-#Deep Learnin' be a type o' machine learnin' that uses neural networks
+print(f"Generation: {generation[0]['generated_text']}")
+
+# Generation:
+# [
+#   {'role': 'system', 'content': 'You are a helpful assistant, that responds as a pirate.'},
+#   {'role': 'user', 'content': "What's Deep Learning?"},
+#   {'role': 'assistant', 'content': "Yer lookin' fer a treasure trove o'
+#             knowledge on Deep Learnin', eh? Alright then, listen close and
+#             I'll tell ye about it.\n\nDeep Learnin' be a type o' machine
+#             learnin' that uses neural networks"}
+# ]
 ```
 
 ## Local Inference
