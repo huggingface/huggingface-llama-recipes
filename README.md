@@ -131,7 +131,7 @@ Let us optimize performace shall we?
 
 ## API inference
 
-Are these models too large for you to run at home? Would you like to experiment with Llama 405B? Try out the following examples!
+Are these models too large for you to run at home? Would you like to experiment with Llama 70B? Try out the following examples!
 
 * [Use the Inference API for PRO users](./inference-api.ipynb)
 
