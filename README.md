@@ -104,17 +104,17 @@ memory needed for different configurations:
 
 ### Llama 3.1
 
-| Model Size | FP16 | FP8 | INT4(AWQ/GPTQ/bnb) |
-| :--: | :--: | :--: | :--: |
-| 8B | 16 GB | 8GB | 4GB |
-| 70B | 140 GB | 70GB | 35GB |
-|405B | 810 GB | 405GB | 204GB |
+| Model Size | Llama Variant | FP16 | FP8 | INT4(AWQ/GPTQ/bnb) |
+| :--: | :--: | :--: | :--: | :--: |
+| 1B | 3.2 | 2.5 GB | 1.25GB | 0.75GB |
+| 3B | 3.2 |6.5 GB | 3.2GB | 1.75GB |
+| 8B | 3.1 |16 GB | 8GB | 4GB |
+| 70B | 3.1 | 140 GB | 70GB | 35GB |
+|405B | 3.1 |810 GB | 405GB | 204GB |
 
-### Llama 3.2
 | Model Size | BF16/FP16 | FP8 | INT4 |
 | :--: | :--: | :--: | :--: |
-| 1B | 2.5 GB | 1.25GB | 0.75GB |
-| 3B | 6.5 GB | 3.2GB | 1.75GB |
+
 
 > [!NOTE]
 > These are estimated values and may vary based on specific
