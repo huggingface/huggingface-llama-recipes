@@ -71,8 +71,6 @@ So do we! The memory requirements depend on the model size and the
 precision of the weights. Here's a table showing the approximate
 memory needed for different configurations:
 
-### Llama 3.1
-
 | Model Size | Llama Variant | BF16/FP16 | FP8 | INT4(AWQ/GPTQ/bnb) |
 | :--: | :--: | :--: | :--: | :--: |
 | 1B | 3.2 | 2.5 GB | 1.25GB | 0.75GB |
