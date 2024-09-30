@@ -42,4 +42,4 @@ Thank you for your time and happy coding!
 
 ## 💡 Need Help?
 
-If you have any questions or need guidance, feel free to open an issue or start a discussion. We're here to help!
+If you have any questions or need guidance, feel free to open an issue or draft PR. We're here to help!
