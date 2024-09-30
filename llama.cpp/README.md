@@ -7,7 +7,7 @@
 3. Sign in with your Hugging Face account.
 4. Search for your model ID.
 5. Select the desired quantization type.
-6. Click on "Submit" and wait for the space to generate your quantized model!
+6. Click on Submit and wait for the space to generate your quantized model!
 
 ## Part 2 - Serving the model on google colab using llama.cpp
 
