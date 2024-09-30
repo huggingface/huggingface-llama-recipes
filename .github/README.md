@@ -88,15 +88,15 @@ implementation details and optimizations.
 
 Working with the capable Llama 3.1 8B models:
 
-* [Run Llama 3.1 8B in 4-bits with bitsandbytes](./4bit_bnb.ipynb)
-* [Run Llama 3.1 8B in 8-bits with bitsandbytes](./8bit_bnb.ipynb)
-* [Run Llama 3.1 8B with AWQ & fused ops](./awq.ipynb)
+* [Run Llama 3.1 8B in 4-bits with bitsandbytes](./local_inference/4bit_bnb.ipynb)
+* [Run Llama 3.1 8B in 8-bits with bitsandbytes](./local_inference/8bit_bnb.ipynb)
+* [Run Llama 3.1 8B with AWQ & fused ops](./local_inference/awq.ipynb)
 
 Working on the 🐘 big Llama 3.1 405B model:
 
-* [Run Llama 3.1 405B FP8](./fp8-405B.ipynb)
-* [Run Llama 3.1 405B quantized to INT4 with AWQ](./awq_generation.py)
-* [Run Llama 3.1 405B quantized to INT4 with GPTQ](./gptq_generation.py)
+* [Run Llama 3.1 405B FP8](./local_inference/fp8-405B.ipynb)
+* [Run Llama 3.1 405B quantized to INT4 with AWQ](./local_inference/awq_generation.py)
+* [Run Llama 3.1 405B quantized to INT4 with GPTQ](./local_inference/gptq_generation.py)
 
 ## Model Fine Tuning:
 
@@ -106,43 +106,44 @@ custom dataset. Here are some scripts showing
 how to fine-tune the models.
 
 Fine tune models on your custom dataset:
-* [Fine tune Llama 3.2 Vision on a custom dataset](./Llama-Vision%20FT.ipynb)
-* [Supervised Fine Tuning on Llama 3.2 Vision with TRL](./sft_vlm.py)
-* [How to fine-tune Llama 3.1 8B on consumer GPU with PEFT and QLoRA with bitsandbytes](./peft_finetuning.py)
-* [Execute a distributed fine tuning job for the Llama 3.1 405B model on a SLURM-managed computing cluster](./qlora_405B.slurm)
+* [Fine tune Llama 3.2 Vision on a custom dataset](./fine_tune/Llama-Vision%20FT.ipynb)
+* [Supervised Fine Tuning on Llama 3.2 Vision with TRL](./fine_tune/sft_vlm.py)
+* [How to fine-tune Llama 3.1 8B on consumer GPU with PEFT and QLoRA with bitsandbytes](./fine_tune/peft_finetuning.py)
+* [Execute a distributed fine tuning job for the Llama 3.1 405B model on a SLURM-managed computing cluster](./fine_tune/qlora_405B.slurm)
 
 ## Assisted Decoding Techniques
 
 Do you want to use the smaller Llama 3.2 models to speedup text generation
 of bigger models? These notebooks showcase assisted decoding (speculative decoding), which gives you upto 2x speedups for text generation on Llama 3.1 70B (with greedy decoding).
 
-* [Run assisted decoding with 🐘 Llama 3.1 70B and 🤏 Llama 3.2 3B](./assisted_decoding_70B_3B.ipynb)
-* [Run assisted decoding with Llama 3.1 8B and Llama 3.2 1B](./assisted_decoding_8B_1B.ipynb)
-* [Assisted Decoding with 405B model](./assisted_decoding.py)
+* [Run assisted decoding with 🐘 Llama 3.1 70B and 🤏 Llama 3.2 3B](./assisted_decoding/assisted_decoding_70B_3B.ipynb)
+* [Run assisted decoding with Llama 3.1 8B and Llama 3.2 1B](./assisted_decoding/assisted_decoding_8B_1B.ipynb)
+* [Assisted Decoding with 405B model](./assisted_decoding/assisted_decoding.py)
 
 ## Performance Optimization
 
 Let us optimize performace shall we?
 
-* [Accelerate your inference using torch.compile](./torch_compile.py)
-* [Accelerate your inference using torch.compile and 4-bit quantization with torchao](./torch_compile_with_torchao.ipynb)
-* [Quantize KV Cache to lower memory requirements](./quantized_cache.py)
-* [How to reuse prompts with dynamic caching](./prompt_reuse.py)
+* [Accelerate your inference using torch.compile](./performance_optimization/torch_compile.py)
+* [Accelerate your inference using torch.compile and 4-bit quantization with torchao](./performance_optimization/torch_compile_with_torchao.ipynb)
+* [Quantize KV Cache to lower memory requirements](./performance_optimization/quantized_cache.py)
+* [How to reuse prompts with dynamic caching](./performance_optimization/prompt_reuse.py)
+* [How to setup distributed training utilizing DeepSpeed with mixed-precision and Zero-3 optimization](./performance_optimization/deepspeed_zero3.yaml)
 
 ## API inference
 
 Are these models too large for you to run at home? Would you like to experiment with Llama 70B? Try out the following examples!
 
-* [Use the Inference API for PRO users](./inference-api.ipynb)
+* [Use the Inference API for PRO users](./api_inference/inference-api.ipynb)
 
 ## Llama Guard and Prompt Guard
 
 In addition to the generative models, Meta released two new models: Llama Guard 3 and Prompt Guard. Prompt Guard is a small classifier that detects jailbreaks and prompt injections. Llama Guard 3 is a safeguard model that can classify LLM inputs and generations. Learn how to use them as done in the following notebooks:
 
-* [Detecting jailbreaks and prompt injection with Prompt Guard](./prompt_guard.ipynb)
+* [Detecting jailbreaks and prompt injection with Prompt Guard](./llama_guard/prompt_guard.ipynb)
 
 ## Synthetic Data Generation
 With the ever hungry models, the need for synthetic data generation is
 on the rise. Here we show you how to build your very own synthetic dataset.
 
-* [Generate synthetic data with `distilabel`](./synthetic-data-with-llama.ipynb)
+* [Generate synthetic data with `distilabel`](./synthetic_data_gen/synthetic-data-with-llama.ipynb)
