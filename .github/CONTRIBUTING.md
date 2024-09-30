@@ -1,6 +1,6 @@
 # Welcome to the contribution guide 🤗
 
-We are excited to invite the community to contribute to the repository! We appreciate all contributions, big or small. Your efforts help make this repository a valuable resource for everyone working with Llama 3.x models in the Hugging Face ecosystem.
+We are excited to invite the community to contribute to the repository! We appreciate all contributions, big or small. Your efforts help make this repository a valuable resource for everyone working with Llama models.
 
 Thank you for your time and happy coding!
 
