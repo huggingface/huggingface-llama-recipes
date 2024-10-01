@@ -145,3 +145,8 @@ With the ever hungry models, the need for synthetic data generation is
 on the rise. Here we show you how to build your very own synthetic dataset.
 
 * [Generate synthetic data with `distilabel`](../synthetic_data_gen/synthetic-data-with-llama.ipynb)
+
+## RAG Pipeline 
+You are interested in a simple RAG pipeline? We have you covered! Below is a simple example of how to quickly build a RAG pipeline with locally running Llama 3.2 3B + Langchain + Hugging Face `Datasets` and `sentence-transformers` + free MongoDB Atlas Vector DB.
+
+* [Simple RAG Pipeline](../llama_rag/llama_rag.ipynb)
