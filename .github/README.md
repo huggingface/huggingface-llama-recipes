@@ -145,3 +145,6 @@ With the ever hungry models, the need for synthetic data generation is
 on the rise. Here we show you how to build your very own synthetic dataset.
 
 * [Generate synthetic data with `distilabel`](../synthetic_data_gen/synthetic-data-with-llama.ipynb)
+
+## LlaMa CPP
+[llama_cpp_python](llama.cpp/llama_cpp_python.ipynb)
