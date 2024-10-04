@@ -19,7 +19,7 @@ $ pip install transformers
 
 ## Usage
 
-To start a Gradio demo, open the Jupyter notebook of your choice and execute the cells. Each notebook will launch a Gradio interface, allowing you to interact with the LLaMA models.
+To start a Gradio demo, open the Jupyter notebook of your choice and execute the cells. Each notebook will launch a Gradio interface, allowing you to interact with the Llama models.
 
 ## Available Demos
 
