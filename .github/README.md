@@ -150,4 +150,4 @@ on the rise. Here we show you how to build your very own synthetic dataset.
 
 Want to run Llama models efficiently? check out this notebook where we quantize a Llama model and run inference using the `llama-cpp-python` library
 
-[llama_cpp_python](llama.cpp/llama_cpp_python.ipynb)
+[llama_cpp_python](/llama.cpp/llama_cpp_python.ipynb)
