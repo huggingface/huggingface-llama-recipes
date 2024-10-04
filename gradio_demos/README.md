@@ -1,6 +1,6 @@
 # Gradio Demos for Llama Recipes
 
-This folder contains **Gradio** demos for Llama recipes using Hugging Face. These demos showcase various applications and functionalities of **LLaMA models** in an interactive manner.
+This folder contains **Gradio** demos for Llama recipes using Hugging Face. These demos showcase various applications and functionalities of **Llama models** in an interactive manner.
 
 ## Table of Contents
 
