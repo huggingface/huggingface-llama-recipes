@@ -145,3 +145,8 @@ With the ever hungry models, the need for synthetic data generation is
 on the rise. Here we show you how to build your very own synthetic dataset.
 
 * [Generate synthetic data with `distilabel`](../synthetic_data_gen/synthetic-data-with-llama.ipynb)
+
+## Llama RAG 
+Seeking an entry-level RAG pipeline? This notebook guides you through building a very simple streamlined RAG experiment using Llama and Hugging Face.
+
+* [Simple RAG Pipeline](../llama_rag/llama_rag_pipeline.ipynb)
