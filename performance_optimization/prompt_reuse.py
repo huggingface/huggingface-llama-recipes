@@ -16,7 +16,8 @@ tokenizer = AutoTokenizer.from_pretrained(ckpt)
 
 prompt_cache = DynamicCache()
 inputs = tokenizer(INITIAL_PROMPT, return_tensors="pt").to("cuda")
-prompt_cache = model(**inputs, past_key_values = prompt_cache).past_key_values
+with torch.no_grad():
+    prompt_cache = model(**inputs, past_key_values = prompt_cache).past_key_values
 
 
 prompt = "Why are french people obsessed with french?"
