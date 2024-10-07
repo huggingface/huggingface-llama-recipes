@@ -146,6 +146,12 @@ on the rise. Here we show you how to build your very own synthetic dataset.
 
 * [Generate synthetic data with `distilabel`](../synthetic_data_gen/synthetic-data-with-llama.ipynb)
 
+## Llama.cpp
+
+Want to run Llama models efficiently? check out this notebook where we quantize a Llama model and run inference using the `llama-cpp-python` library
+
+[llama_cpp_python](/llama.cpp/llama_cpp_python.ipynb)
+
 ## Llama RAG 
 Seeking an entry-level RAG pipeline? This notebook guides you through building a very simple streamlined RAG experiment using Llama and Hugging Face.
 
