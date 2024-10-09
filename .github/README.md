@@ -154,6 +154,6 @@ Seeking an entry-level RAG pipeline? This notebook guides you through building a
 
 
 ## Text Generation Inference (TGI) & API Inference with Llama Models
-In addition to efficient inference with large models, the Text Generation Inference (TGI) framework enables scalable deployment of Llama models. Learn how to integrate TGI for fast text generation in the following recipe:
+Text Generation Inference (TGI) framework enables efficient and  scalable deployment of Llama models. In this notebook we'll learn how to integrate TGI for fast text generation and to consume already deployed Llama models via Inference API:
 
 * [Text Generation Inference (TGI) with Llama Models](../llama_tgi/tgi_recipe.ipynb)
