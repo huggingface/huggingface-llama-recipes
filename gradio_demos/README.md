@@ -1,6 +1,6 @@
-# Gradio Demo for Llama Recipes
+# Gradio Demos for Llama Recipes
 
-This folder contains **Gradio** demos for Llama recipes using Hugging Face. These demos showcase various applications and functionalities of **LLaMA models** in an interactive manner.
+This folder contains a **Gradio** demo for creating a chatbot using Hugging Face. This demo showcases various applications and functionalities of **Llama models** in an interactive manner, multiple tasks such as general conversation, sentiment analysis, and summarization are available for use in the demo.
 
 ## Table of Contents
 
@@ -19,9 +19,9 @@ $ pip install transformers
 
 ## Usage
 
-To start the Gradio demo, open the chatbot_demo Jupyter notebook and execute the cells. The notebook will launch a Gradio interface, allowing you to interact with the Llama models for different tasks including general conversation, sentiment analysis, and text summarization.
+To start the Gradio demo, open the Jupyter notebook and execute the cells. The notebook will launch a Gradio interface, allowing you to interact with the Llama models for different tasks including general conversation, sentiment analysis, and text summarization.
 
-## Available Demos
+## Included Functionalities
 
 Below is a list of the available Gradio demos in this folder:
 
