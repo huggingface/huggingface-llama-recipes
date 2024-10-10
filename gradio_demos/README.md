@@ -23,7 +23,7 @@ To start the Gradio demo, open the Jupyter notebook and execute the cells. The n
 
 ## Included Functionalities
 
-Below is a list of the available Gradio demos in this folder:
+Below is a list of the available tasks in the demo:
 
 - **Chatbot**: Engage in interactive conversations using Llama models.
 - **Sentiment Analysis**: Analyze the sentiment of user inputs.
