@@ -151,3 +151,8 @@ on the rise. Here we show you how to build your very own synthetic dataset.
 Seeking an entry-level RAG pipeline? This notebook guides you through building a very simple streamlined RAG experiment using Llama and Hugging Face.
 
 * [Simple RAG Pipeline](../llama_rag/llama_rag_pipeline.ipynb)
+
+## Chatbot Demo with Llama Models 
+Would you like to build a chatbot with Llama models? Here's a simple example to get you started.
+
+* [Chatbot with Llama Models](../gradio_demos/chatbot_demo.ipynb)
