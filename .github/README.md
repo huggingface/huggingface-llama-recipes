@@ -151,3 +151,9 @@ on the rise. Here we show you how to build your very own synthetic dataset.
 Seeking an entry-level RAG pipeline? This notebook guides you through building a very simple streamlined RAG experiment using Llama and Hugging Face.
 
 * [Simple RAG Pipeline](../llama_rag/llama_rag_pipeline.ipynb)
+
+
+## Text Generation Inference (TGI) & API Inference with Llama Models
+Text Generation Inference (TGI) framework enables efficient and  scalable deployment of Llama models. In this notebook we'll learn how to integrate TGI for fast text generation and to consume already deployed Llama models via Inference API:
+
+* [Text Generation Inference (TGI) with Llama Models](../llama_tgi_api_inference/tgi_api_inference_recipe.ipynb) 
