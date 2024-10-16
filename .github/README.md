@@ -158,3 +158,8 @@ Seeking an entry-level RAG pipeline? This notebook guides you through building a
 Text Generation Inference (TGI) framework enables efficient and  scalable deployment of Llama models. In this notebook we'll learn how to integrate TGI for fast text generation and to consume already deployed Llama models via Inference API:
 
 * [Text Generation Inference (TGI) with Llama Models](../llama_tgi_api_inference/tgi_api_inference_recipe.ipynb) 
+
+## Chatbot Demo with Llama Models 
+Would you like to build a chatbot with Llama models? Here's a simple example to get you started.
+
+* [Chatbot with Llama Models](../gradio_demos/chatbot_demo.ipynb)
