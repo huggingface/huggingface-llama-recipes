@@ -139,6 +139,7 @@ Are these models too large for you to run at home? Would you like to experiment 
 In addition to the generative models, Meta released two new models: Llama Guard 3 and Prompt Guard. Prompt Guard is a small classifier that detects jailbreaks and prompt injections. Llama Guard 3 is a safeguard model that can classify LLM inputs and generations. Learn how to use them as done in the following notebooks:
 
 * [Detecting jailbreaks and prompt injection with Prompt Guard](../llama_guard/prompt_guard.ipynb)
+* [Integrating Llama Guard in LLM Workflows for detecting prompt safety](../llama_guard/llama_guard_3_1B.ipynb)
 
 ## Synthetic Data Generation
 With the ever hungry models, the need for synthetic data generation is
