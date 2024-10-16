@@ -139,6 +139,7 @@ Are these models too large for you to run at home? Would you like to experiment 
 In addition to the generative models, Meta released two new models: Llama Guard 3 and Prompt Guard. Prompt Guard is a small classifier that detects jailbreaks and prompt injections. Llama Guard 3 is a safeguard model that can classify LLM inputs and generations. Learn how to use them as done in the following notebooks:
 
 * [Detecting jailbreaks and prompt injection with Prompt Guard](../llama_guard/prompt_guard.ipynb)
+* [Integrating Llama Guard in LLM Workflows for detecting prompt safety](../llama_guard/llama_guard_3_1B.ipynb)
 
 ## Synthetic Data Generation
 With the ever hungry models, the need for synthetic data generation is
@@ -152,7 +153,8 @@ Seeking an entry-level RAG pipeline? This notebook guides you through building a
 
 * [Simple RAG Pipeline](../llama_rag/llama_rag_pipeline.ipynb)
 
-## Chatbot Demo with Llama Models 
-Would you like to build a chatbot with Llama models? Here's a simple example to get you started.
 
-* [Chatbot with Llama Models](../gradio_demos/chatbot_demo.ipynb)
+## Text Generation Inference (TGI) & API Inference with Llama Models
+Text Generation Inference (TGI) framework enables efficient and  scalable deployment of Llama models. In this notebook we'll learn how to integrate TGI for fast text generation and to consume already deployed Llama models via Inference API:
+
+* [Text Generation Inference (TGI) with Llama Models](../llama_tgi_api_inference/tgi_api_inference_recipe.ipynb) 
