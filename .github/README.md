@@ -163,5 +163,3 @@ Text Generation Inference (TGI) framework enables efficient and  scalable deploy
 Would you like to build a chatbot with Llama models? Here's a simple example to get you started.
 
 * [Chatbot with Llama Models](../gradio_demos/chatbot_demo.ipynb)
-
-![Chatbot Demo Screenshot](../gradio_demos/chatbot_screenshot.png)
