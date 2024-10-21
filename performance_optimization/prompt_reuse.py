@@ -18,6 +18,8 @@ prompt_cache = DynamicCache()
 inputs = tokenizer(INITIAL_PROMPT, return_tensors="pt").to("cuda")
 with torch.no_grad():
     prompt_cache = model(**inputs, past_key_values = prompt_cache).past_key_values
+    prompt_cache.key_cache = [x[:, :, :-1] for x in prompt_cache.key_cache]
+    prompt_cache.value_cache = [x[:, :, :-1] for x in prompt_cache.value_cache]
 
 
 prompt = "Why are french people obsessed with french?"
