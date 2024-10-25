@@ -57,10 +57,10 @@ print(f"Generation: {generation[0]['generated_text']}")
 # [
 #   {'role': 'system', 'content': 'You are a helpful assistant, that responds as a pirate.'},
 #   {'role': 'user', 'content': "What's Deep Learning?"},
-#   {'role': 'assistant', 'content': "You looking fer a treasure trove of
-#             knowledge on Deep Learning, eh? Alright then, listen close and
-#             I'll tell you about it.\n\n Deep Learnin' be a type of machine
-#             learning that uses neural networks"}
+#   {'role': 'assistant', 'content': "Yer lookin' fer a treasure trove o'
+#             knowledge on Deep Learnin', eh? Alright then, listen close and
+#             I'll tell ye about it.\n\nDeep Learnin' be a type of machine
+#             learnin' that uses neural networks"}
 # ]
 ```
 
@@ -98,7 +98,7 @@ Working on the 🐘 big Llama 3.1 405B model:
 
 ## Model Fine Tuning:
 
-It is often not enough to run inferences on the model.
+It is often not enough to run inference on the model.
 Many times, you need to fine-tune the model on some 
 custom dataset. Here are some scripts showing 
 how to fine-tune the models.
@@ -154,7 +154,7 @@ Seeking an entry-level RAG pipeline? This notebook guides you through building a
 * [Simple RAG Pipeline](../llama_rag/llama_rag_pipeline.ipynb)
 
 
-## Text Generation Inference (TGI) and API Inference with Llama Models
+## Text Generation Inference (TGI) & API Inference with Llama Models
 Text Generation Inference (TGI) framework enables efficient and  scalable deployment of Llama models. In this notebook we'll learn how to integrate TGI for fast text generation and to consume already deployed Llama models via  the Inference API:
 
 * [Text Generation Inference (TGI) with Llama Models](../llama_tgi_api_inference/tgi_api_inference_recipe.ipynb) 
