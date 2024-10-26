@@ -59,7 +59,7 @@ print(f"Generation: {generation[0]['generated_text']}")
 #   {'role': 'user', 'content': "What's Deep Learning?"},
 #   {'role': 'assistant', 'content': "Yer lookin' fer a treasure trove o'
 #             knowledge on Deep Learnin', eh? Alright then, listen close and
-#             I'll tell ye about it.\n\nDeep Learnin' be a type of machine
+#             I'll tell ye about it.\n\nDeep Learnin' be a type o' machine
 #             learnin' that uses neural networks"}
 # ]
 ```
