@@ -5,8 +5,8 @@
 🤗🦙Welcome! This repository contains *minimal* recipes to get started quickly
 with **Llama 3.x** models, including **Llama 3.1** and **Llama 3.2**.
 
-* To get an overview of Llama 3.1, please visit [Hugging Face announcement blog post (3.1)](https://huggingface.co/blog/llama31).
-* To get an overview of Llama 3.2, please visit [Hugging Face announcement blog post (3.2)](https://huggingface.co/blog/llama32).
+* To get an overview of Llama 3.1, please visit the [Hugging Face announcement blog post (3.1)](https://huggingface.co/blog/llama31).
+* To get an overview of Llama 3.2, please visit the [Hugging Face announcement blog post (3.2)](https://huggingface.co/blog/llama32).
 * For more advanced end-to-end use cases with open ML, please visit the [Open Source AI Cookbook](https://huggingface.co/learn/cookbook/index).
 
 This repository is WIP so that you might see considerable changes in the coming days.
@@ -98,7 +98,7 @@ Working on the 🐘 big Llama 3.1 405B model:
 
 ## Model Fine Tuning:
 
-It is often not enough to run inference on the model. 
+It is often not enough to run inference on the model.
 Many times, you need to fine-tune the model on some 
 custom dataset. Here are some scripts showing 
 how to fine-tune the models.
@@ -111,8 +111,8 @@ Fine tune models on your custom dataset:
 
 ## Assisted Decoding Techniques
 
-Do you want to use the smaller Llama 3.2 models to speedup text generation
-of bigger models? These notebooks showcase assisted decoding (speculative decoding), which gives you upto 2x speedups for text generation on Llama 3.1 70B (with greedy decoding).
+Do you want to use the smaller Llama 3.2 models to speed up text generation
+for bigger models? These notebooks showcase assisted decoding (speculative decoding), which gives you upto 2x speedups for text generation on Llama 3.1 70B (with greedy decoding).
 
 * [Run assisted decoding with 🐘 Llama 3.1 70B and 🤏 Llama 3.2 3B](../assisted_decoding/assisted_decoding_70B_3B.ipynb)
 * [Run assisted decoding with Llama 3.1 8B and Llama 3.2 1B](../assisted_decoding/assisted_decoding_8B_1B.ipynb)
@@ -155,7 +155,7 @@ Seeking an entry-level RAG pipeline? This notebook guides you through building a
 
 
 ## Text Generation Inference (TGI) & API Inference with Llama Models
-Text Generation Inference (TGI) framework enables efficient and  scalable deployment of Llama models. In this notebook we'll learn how to integrate TGI for fast text generation and to consume already deployed Llama models via Inference API:
+Text Generation Inference (TGI) framework enables efficient and  scalable deployment of Llama models. In this notebook we'll learn how to integrate TGI for fast text generation and to consume already deployed Llama models via  the Inference API:
 
 * [Text Generation Inference (TGI) with Llama Models](../llama_tgi_api_inference/tgi_api_inference_recipe.ipynb) 
 
