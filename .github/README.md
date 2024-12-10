@@ -3,7 +3,7 @@
 ![thumbnail for repository](../assets/hf-llama-recepies.png)
 
 🤗🦙Welcome! This repository contains *minimal* recipes to get started quickly
-with **Llama 3.x** models, including **Llama 3.1** and **Llama 3.2**.
+with **Llama 3.x** models, including **Llama 3.1**, **Llama 3.2**, and **Llama 3.3**.
 
 * To get an overview of Llama 3.1, please visit the [Hugging Face announcement blog post (3.1)](https://huggingface.co/blog/llama31).
 * To get an overview of Llama 3.2, please visit the [Hugging Face announcement blog post (3.2)](https://huggingface.co/blog/llama32).
@@ -76,7 +76,7 @@ memory needed for different configurations:
 | 1B | 3.2 | 2.5 GB | 1.25GB | 0.75GB |
 | 3B | 3.2 |6.5 GB | 3.2GB | 1.75GB |
 | 8B | 3.1 |16 GB | 8GB | 4GB |
-| 70B | 3.1 | 140 GB | 70GB | 35GB |
+| 70B | 3.1 and 3.3 | 140 GB | 70GB | 35GB |
 |405B | 3.1 |810 GB | 405GB | 204GB |
 
 
